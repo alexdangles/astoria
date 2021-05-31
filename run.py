@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, redirect, url_for
 import os
 import math
 import datetime
@@ -12,13 +12,13 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 # main page
 @app.route("/")
 def index():
-    msg3 = 'wowsers'
-    return render_template('index.html', msg=msg3, wid=979)
+    return render_template('index.html', msg='neato', wid=979)
 
 
 @app.route("/sayhello")
 def hello():
-    return Ssh(pi, '~/scripts/home_arduino.py status')
+    Ssh(pi, '~/scripts/home_arduino.py laser')
+    return redirect(url_for('index'))
 
 
 @app.route('/login')
