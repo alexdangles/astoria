@@ -1,6 +1,6 @@
 video {
   object-fit: cover;
-  width: 100%;
+  width: 95%;
   height: 100%;
   position: fixed;
   z-index: -1;
@@ -28,7 +28,7 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .hero-btns {
