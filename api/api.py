@@ -11,8 +11,8 @@ log = Log(config['logfile'])
 
 @app.route("/sayhello")
 def hello():
-    rtn = Ssh(pi, 'uptime')
-    log.File(rtn)
+    #rtn = Ssh(pi, 'uptime')
+    #log.File(rtn)
     return {'time': datetime.datetime.now().strftime("%H:%M:%S")}
 
 
