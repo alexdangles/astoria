@@ -1,0 +1,11 @@
+{
+  "app_name": "astoria",
+  "version": "1.0",
+  "arduino": "~/scripts/home_arduino.py",
+  "pi": "alex@pi",
+  "leds": "",
+  "laser": "Laser is off",
+  "logfile": "app.log",
+  "host": "0.0.0.0",
+  "port": "3000"
+}
