@@ -11,6 +11,7 @@ function HeroSection() {
       <p>Testing for javascript</p>
       <div className='hero-btns'>
         <Button
+          to='/sign-up'
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
@@ -18,6 +19,7 @@ function HeroSection() {
           Hi there
         </Button>
         <Button
+          to='/login'
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'

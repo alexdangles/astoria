@@ -21,7 +21,9 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button to='/sign-up' buttonStyle='btn--outline'>
+              Subscribe
+            </Button>
           </form>
         </div>
       </section>
@@ -68,7 +70,9 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>Alex D'Angelo © 2020</small>
+          <small class='website-rights'>
+            Alex D'Angelo © {new Date().getFullYear()}
+          </small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
