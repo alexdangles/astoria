@@ -6,7 +6,7 @@ from easysettings import load_json_settings
 
 config = load_json_settings('config.json')
 pi = config['pi']
-app_name = config['app_name']
+app_name = config['name']
 
 
 def Ssh(host, command):

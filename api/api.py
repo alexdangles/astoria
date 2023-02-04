@@ -11,15 +11,15 @@ log = Log(config['logfile'])
 
 @app.route("/sayhello")
 def hello():
-    #rtn = Ssh(pi, 'uptime')
-    #log.File(rtn)
-    return {'time': datetime.datetime.now().strftime("%H:%M:%S")}
+    utime = Ssh(pi, 'uptime')
+    log.File(utime)
+    return {"utime": utime}
 @app.route("/login", methods = ['POST','GET'])
 def login():
     if request.method == 'POST':
         studentName = request.form['studentName'] 
         website = request.form.get('website')
-        return '%s </br> %s' % (studentName, website) 
+        return '{} </br> {}'.format(studentName, website) 
 
 # run the application
 if __name__ == "__main__":

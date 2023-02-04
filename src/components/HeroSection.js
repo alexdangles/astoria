@@ -8,11 +8,10 @@ function HeroSection() {
     <div className='hero-container'>
       <video src='/videos/video-2.mp4' autoPlay loop muted />
       <h1>Timbuktu</h1>
-      <p>Testing for javascript</p>
+      <p>Testing for Alex</p>
       <div className='hero-btns'>
         <Button
           to='/sign-up'
-          className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
@@ -20,7 +19,6 @@ function HeroSection() {
         </Button>
         <Button
           to='/login'
-          className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}

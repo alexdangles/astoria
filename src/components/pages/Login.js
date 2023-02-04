@@ -13,7 +13,7 @@ export default function Login() {
         <input type='text' name='website' />
       </p>
       <p>
-        <input type='submit' value='submit' />
+        <input type='submit' value='      Go       ' />
       </p>
     </form>
   );

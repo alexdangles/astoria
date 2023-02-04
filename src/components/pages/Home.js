@@ -5,19 +5,19 @@ import HeroSection from '../HeroSection';
 import Footer from '../Footer';
 
 function Home() {
-  const [currentTime, setCurrentTime] = useState(0);
+  const [utime, callssh] = useState(0);
 
   useEffect(() => {
     fetch('/sayhello')
       .then((res) => res.json())
       .then((data) => {
-        setCurrentTime(data.time);
+        callssh(data.utime);
       });
   }, []);
   return (
     <>
       <HeroSection />
-      <p>The current time is {currentTime}.</p>
+      <p>{utime}</p>
       <Cards />
       <Footer />
     </>
