@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .footer-subscription {
@@ -20,7 +21,8 @@
 }
 
 .footer-subscription > p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .footer-subscription-heading {

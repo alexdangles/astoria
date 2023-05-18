@@ -1,5 +1,5 @@
 #!/bin/bash
 cd api
-python3 api.py &
+python api.py &
 cd ..
 yarn start
